@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:background="@color/b"
+        tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_weight="0.5"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_pattern"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtLableName_Gutenberg_Project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/a"
+                android:textSize="@dimen/text_size"
+                android:fontFamily="@font/quicksand_regular"
+                android:textStyle="bold"
+                android:text="@string/app_name"
+                android:layout_gravity="center"
+                android:padding="2dp" />
+            <TextView
+                android:id="@+id/txtLableName_Gutenberg_Project_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/lbl_name"
+                android:textSize="@dimen/text_size"
+                android:fontFamily="@font/quicksand_regular"
+                android:textStyle="bold"
+                android:text="@string/app_details"
+                android:layout_gravity="center"
+                android:padding="2dp" />
+        </LinearLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/backgroundcolor"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardPreventCornerOverlap="true"
+                    card_view:cardElevation="5dp"
+                    card_view:cardCornerRadius="5dp"
+                    tools:ignore="MissingConstraints">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:id="@+id/btn_FICTION"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1.3"
+                            android:src="@drawable/ic_fiction"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtLableName_FICTION"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lbl_name"
+                            android:textSize="@dimen/text_size"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:textStyle="bold"
+                            android:text="FICTION"
+                            android:layout_gravity="center"
+                            android:padding="2dp"
+                            android:layout_weight="0.4"/>
+
+
+
+
+                        <ImageView
+                            android:id="@+id/btnItem_FICTION"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tint="@color/a"
+                            android:layout_weight="1.3"
+                            android:src="@drawable/ic_next"
+                            android:layout_gravity="center" />
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/backgroundcolor"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardPreventCornerOverlap="true"
+                    card_view:cardElevation="5dp"
+                    card_view:cardCornerRadius="5dp"
+                    tools:ignore="MissingConstraints">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        tools:ignore="UselessParent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/btn_DRAMA"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1.3"
+                            android:src="@drawable/ic_drama"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtLableName_DRAMA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lbl_name"
+                            android:textSize="@dimen/text_size"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:textStyle="bold"
+                            android:text="DRAMA"
+                            android:layout_gravity="center"
+                            android:padding="2dp"
+                            android:layout_weight="0.4"/>
+
+
+
+
+                        <ImageView
+                            android:id="@+id/btnItem_DRAMA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tint="@color/a"
+                            android:layout_weight="1.3"
+                            android:src="@drawable/ic_next"
+                            android:layout_gravity="center" />
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/backgroundcolor"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardPreventCornerOverlap="true"
+                    card_view:cardElevation="5dp"
+                    card_view:cardCornerRadius="5dp"
+                    tools:ignore="MissingConstraints">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        tools:ignore="UselessParent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/btn_HUMOR"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1.3"
+                            android:src="@drawable/ic_humour"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtLableName_HUMOR"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lbl_name"
+                            android:textSize="@dimen/text_size"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:textStyle="bold"
+                            android:text="HUMOR"
+                            android:layout_gravity="center"
+                            android:padding="2dp"
+                            android:layout_weight="0.4"/>
+
+
+
+
+                        <ImageView
+                            android:id="@+id/btnItem_HUMOR"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tint="@color/a"
+                            android:layout_weight="1.3"
+                            android:src="@drawable/ic_next"
+                            android:layout_gravity="center" />
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/backgroundcolor"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardPreventCornerOverlap="true"
+                    card_view:cardElevation="5dp"
+                    card_view:cardCornerRadius="5dp"
+                    tools:ignore="MissingConstraints">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        tools:ignore="UselessParent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/btn_POLITICS"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1.3"
+                            android:src="@drawable/ic_politics"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtLableName_POLITICS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lbl_name"
+                            android:textSize="@dimen/text_size"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:textStyle="bold"
+                            android:text="POLITICS"
+                            android:layout_gravity="center"
+                            android:padding="2dp"
+                            android:layout_weight="0.4"/>
+
+
+
+
+                        <ImageView
+                            android:id="@+id/btnItem_POLITICS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tint="@color/a"
+                            android:layout_weight="1.3"
+                            android:src="@drawable/ic_next"
+                            android:layout_gravity="center" />
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/backgroundcolor"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardPreventCornerOverlap="true"
+                    card_view:cardElevation="5dp"
+                    card_view:cardCornerRadius="5dp"
+                    tools:ignore="MissingConstraints">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        tools:ignore="UselessParent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/btn_PHILOSOPHY"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1.3"
+                            android:src="@drawable/ic_philosophy"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtLableName_PHILOSOPHY"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lbl_name"
+                            android:textSize="@dimen/text_size"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:textStyle="bold"
+                            android:text="PHILOSOPHY"
+                            android:layout_gravity="center"
+                            android:padding="2dp"
+                            android:layout_weight="0.4"/>
+
+
+
+
+                        <ImageView
+                            android:id="@+id/btnItem_PHILOSOPHY"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tint="@color/a"
+                            android:layout_weight="1.3"
+                            android:src="@drawable/ic_next"
+                            android:layout_gravity="center" />
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/backgroundcolor"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardPreventCornerOverlap="true"
+                    card_view:cardElevation="5dp"
+                    card_view:cardCornerRadius="5dp"
+                    tools:ignore="MissingConstraints">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        tools:ignore="UselessParent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/btn_HISTORY"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1.3"
+                            android:src="@drawable/ic_history"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtLableName_HISTORY"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lbl_name"
+                            android:textSize="@dimen/text_size"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:textStyle="bold"
+                            android:text="HISTORY"
+                            android:layout_gravity="center"
+                            android:padding="2dp"
+                            android:layout_weight="0.4"/>
+
+                        <ImageView
+                            android:id="@+id/btnItem_HISTORY"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tint="@color/a"
+                            android:layout_weight="1.3"
+                            android:src="@drawable/ic_next"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/backgroundcolor"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardPreventCornerOverlap="true"
+                    card_view:cardElevation="5dp"
+                    card_view:cardCornerRadius="5dp"
+                    tools:ignore="MissingConstraints">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        tools:ignore="UselessParent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/btn_ADVENTURE"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="1.3"
+                            android:src="@drawable/ic_adventure"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtLableName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/lbl_name"
+                            android:textSize="@dimen/text_size"
+                            android:fontFamily="@font/quicksand_regular"
+                            android:textStyle="bold"
+                            android:text="ADVENTURE"
+                            android:layout_gravity="center"
+                            android:padding="2dp"
+                            android:layout_weight="0.4"/>
+                        <ImageView
+                            android:id="@+id/btnItem_ADVENTURE"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tint="@color/a"
+                            android:layout_weight="1.3"
+                            android:src="@drawable/ic_next"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/a</item>
+        <item name="colorPrimaryDark">@color/a</item>
+        <item name="colorAccent">@color/a</item>
+    </style>
+
+    <style name="SearchviewStyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:editTextColor">@color/e</item>
+        <item name="android:textColorHint">@color/d</item>
+        <item name="background">@drawable/rect_edtprofile</item>
+
+    </style>
+
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/e</item>
+        <item name="android:background">@color/backgroundcolor</item>
+        <item name="colorAccent">@color/a</item>
+    </style>
+
+</resources>

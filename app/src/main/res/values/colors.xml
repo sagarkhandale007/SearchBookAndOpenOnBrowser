@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="a">#5E56E7</color>
+    <color name="b">#F8F7FF</color>
+    <color name="c">#F0F0F6</color>
+
+    <color name="d">#A0A0A0</color>
+    <color name="e">#333333</color>
+    <color name="lbl_name">#333333</color>
+    <color name="backgroundcolor">#ffffff</color>
+
+
+    <color name="colorPrimary">#f2594b</color>
+    <color name="colorPrimaryDark">#f2594b</color>
+    <color name="colorAccent">#D81B60</color>
+</resources>
